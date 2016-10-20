@@ -1,4 +1,4 @@
- # given integer N < 10, create generator that will return a new permutation of
+# given integer N < 10, create generator that will return a new permutation of
 # the integers between 1 and N until permutations exhausted
 # example:
 # N = 4
@@ -26,8 +26,3 @@ def permutations(seq):
         while new_seq[i] <= num:
             i += 1
         perm = perm[:desc-1] + [new_seq.pop(i)] + new_seq
-
-for i in permutations(120):
-    i = list(map(str, i))
-    print(' '.join(i))
-    input("Next? ")
